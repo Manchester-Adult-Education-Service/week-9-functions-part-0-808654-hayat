@@ -30,7 +30,10 @@ print("-------------------------------------------\n"
 # Then call the function by writing: greet()
 #
 # Write your code below:
+def greet():
+      print("Hello, world!")
 
+greet()
 
 # -------------------------------------------
 # Task 2: Greeting with a Name
@@ -54,7 +57,11 @@ print("-------------------------------------------\n"
 # Hello, Bob!
 #
 # Write your code below:
+def greet(name):
+      print(f"Hello, {name}")
 
+greet("hayat")
+greet("Luay")
 
 # -------------------------------------------
 # Task 3: Adding Two Numbers
@@ -75,6 +82,11 @@ print("-------------------------------------------\n"
 # 8
 #
 # Write your code below:
+def add_numbers(num1, num2):
+      return (num1+num2)
+
+result = add_numbers(5, 3)
+print(result)
 
 
 # -------------------------------------------
@@ -96,6 +108,11 @@ print("-------------------------------------------\n"
 # You are 25 years old
 #
 # Write your code below:
+def calculate_age(birth_year):
+      return 2025-birth_year
+
+age = calculate_age(2000)
+print(f"you are {age} years old")
 
 
 # -------------------------------------------
@@ -119,8 +136,14 @@ print("-------------------------------------------\n"
 # False
 #
 # Write your code below:
+def is_even(number):
+      return True if number % 2 == 0 else False
 
+result = is_even(10)
+print(result)
 
+result = is_even(7)
+print(result)
 # -------------------------------------------
 # Task 6: Price with Tax
 # -------------------------------------------
@@ -142,8 +165,12 @@ print("-------------------------------------------\n"
 # Final price: £12.0
 #
 # Write your code below:
+def add_tax(price):
+      return price*1.20 
+      return round(total, 2)
 
-
+final_price = add_tax(10.00)
+print(f"Final price: £{final_price}")
 # -------------------------------------------
 # Task 7: Find Maximum
 # -------------------------------------------
@@ -165,8 +192,14 @@ print("-------------------------------------------\n"
 # 100
 #
 # Write your code below:
+def find_max(a, b):
+      return a if a>b else b
 
+result = find_max(15, 23)
+print(result)
 
+result = find_max(100, 50)
+print(result)
 # -------------------------------------------
 # Task 8: Repeat Message
 # -------------------------------------------
@@ -188,7 +221,11 @@ print("-------------------------------------------\n"
 # Python is fun!
 #
 # Write your code below:
+def repeat_message(message, times):
+      for i in range(times):
+            print(f"{message}")
 
+repeat_message("Python is fun!", 3)
 
 # -------------------------------------------
 # Well Done!
