@@ -21,12 +21,13 @@ print("-------------------------------------------\n"
       + "-------------------------------------------")
 
 # Add comments to explain this code:
-
+#creating a list called cart 
 cart = ["apple", "bread", "milk", "eggs"]
-total_items = len(cart)
-
+#total_items is a variable about the number of items in the list 
+total_items = len(cart) 
+#printing a message showimg the total item in the list 
 print(f"You have {total_items} items in your cart")
-
+#using for loop to output each item in the list
 for item in cart:
     print(f"- {item}")
 
@@ -39,6 +40,10 @@ print("-------------------------------------------\n"
 
 # Add comments to explain this code:
 
+#creating a variable called score where the user entre the test score
+#the variable is an integer, don`t forget to use int
+#checking the grade using if, else block
+#printing the grade
 score = int(input("Enter your test score: "))
 
 if score >= 70:
@@ -57,18 +62,18 @@ print("-------------------------------------------\n"
 
 # Add comments to explain this code:
 
-password = input("Create a password: ")
+password = input("Create a password: ")    #ask the user to enter a password
 
-is_long = len(password) >= 8
-has_upper = password != password.lower()
-has_lower = password != password.upper()
+is_long = len(password) >= 8               #checking that the password lengh is greater or equal to 8 
+has_upper = password != password.lower()   #checking if the password contain an upper case
+has_lower = password != password.upper()   #checking if the password contain a lower case
 
-is_valid = is_long and has_upper and has_lower
+is_valid = is_long and has_upper and has_lower      #password validation
 
-if is_valid:
-    print("Password accepted!")
+if is_valid:                                        #checking password validation 
+    print("Password accepted!")                     #print "Password accepted" if is valid
 else:
-    print("Password rejected. Must be 8+ characters with upper and lowercase letters.")
+    print("Password rejected. Must be 8+ characters with upper and lowercase letters.")    #output "Password rejected" if is not valid 
 
 # -------------------------------------------
 # Task 4: Even Number Counter
@@ -79,14 +84,14 @@ print("-------------------------------------------\n"
 
 # Add comments to explain this code:
 
-numbers = [12, 7, 18, 5, 22, 9, 14]
-even_count = 0
+numbers = [12, 7, 18, 5, 22, 9, 14]                           #creat a list of integer
+even_count = 0                                                #counting the even numbers
 
-for num in numbers:
-    if num % 2 == 0:
-        even_count = even_count + 1
+for num in numbers:                                           #looping throught the list
+    if num % 2 == 0:                                          #check if a number in the list is even
+        even_count = even_count + 1                            
 
-print(f"There are {even_count} even numbers in the list")
+print(f"There are {even_count} even numbers in the list")     #output the total even number in the list
 
 # -------------------------------------------
 # Task 5: Student Records
@@ -97,7 +102,10 @@ print("-------------------------------------------\n"
 
 # Add comments to explain this code:
 
-student = {
+#creat a dictionary named student contain name, age, grades
+#calculate the average grade by deviding the sum grades by the lengh of the grades
+#round the average to 2 dicimals
+student = {                
     "name": "Alice",
     "age": 20,
     "grades": [85, 92, 78, 88]
